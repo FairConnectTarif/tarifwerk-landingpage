@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarifwerk</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="preload" as="image" href="main.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <!-- Hauptbild -->
+    <div id="hero" class="hero">
+      <img src="main.jpg" alt="Tarifwerk Hauptbild" class="hero-img" decoding="async">
+      <button id="playBtn" class="play-btn" type="button" aria-label="Intro‑Video abspielen">
+        Tippe für Intro‑Video 🔊
+      </button>
+    </div>
+
+    <!-- Video (versteckt bis Tap) -->
+    <div id="videoWrap" class="video-wrap" hidden>
+      <video id="introVideo"
+             playsinline
+             webkit-playsinline
+             preload="metadata"
+             controlsList="nodownload noplaybackrate"
+             controls
+             src="intro.mp4">
+        Dein Browser unterstützt das Video nicht.
+      </video>
+    </div>
+
+    <!-- Kontakt-Leiste -->
+    <nav class="cta-bar">
+      <a class="cta" href="tel:+4915117513928">Anrufen</a>
+      <a class="cta" href="mailto:tarifwerk.mega@skymail.de">E‑Mail</a>
+      <a class="legal" href="impressum.html">Impressum</a>
+      <a class="legal" href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
